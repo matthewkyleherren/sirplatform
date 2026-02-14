@@ -5,7 +5,7 @@ import { ProductRecommendations } from '@/components/product/product-recommendat
 import { getProductByHandle } from '@/lib/data/product-detail'
 
 interface ProductPageProps {
-	params: { handle: string }
+	params: Promise<{ handle: string }>
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
