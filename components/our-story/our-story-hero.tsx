@@ -11,29 +11,28 @@ import s from './our-story-hero.module.css'
 export function OurStoryHero() {
 	return (
 		<section className={s.section}>
+			{/* Full-bleed background image */}
 			<div className={s.media}>
 				<Image
 					src="/images/our-story/hero-desktop.jpg"
-					alt="P448 craftsmanship"
+					alt="P448 craftsmanship workshop"
 					fill
 					className={s.image}
 					priority
 					sizes="100vw"
 				/>
 			</div>
-			<div className={s.overlay} />
+
+			{/* Text overlay on the left */}
 			<div className={s.content}>
 				<AnimateIn>
-					<AnimateInContent>
-						<p className={s.kicker}>The World of P448</p>
-					</AnimateInContent>
 					<AnimateInWords
-						text="You Can Surf Later"
+						text="The World Of P448"
 						tag="h1"
 						className={s.title}
 					/>
 					<AnimateInContent>
-						<p className={s.description}>
+						<p className={s.intro}>
 							P448 blends timeless design, thoughtful details and modern
 							influence to create more than just footwear — it{"'"}s a spirit
 							stitched with Italian heritage, craftsmanship and cutting-edge
@@ -42,15 +41,19 @@ export function OurStoryHero() {
 					</AnimateInContent>
 					<AnimateInContent>
 						<p className={s.body}>
-							Founded in 2014 in Forli, Italy, P448 has always been an
-							exploration of creativity, personal style, and expert
-							craftsmanship. What started as a passion project between friends
-							became a forward-thinking footwear brand that draws inspiration
-							from travel, street cultures and technical skills — all in the
-							name of experimentation and expression. At our core, we are
-							seekers, in life and in style. {'"'}You Can Surf Later{'"'} is our
-							way of saying to enjoy life{"'"}s adventures, wherever our feet
-							take us.
+							You asked for P448er? Let{"'"}s Talk. P448
+							has always been an exploration of
+							creativity, personal style, and expert
+							craftsmanship. What started as a
+							passion project between friends
+							became a forward thinking footwear
+							brand, street cultures and bold mood
+							all in the name of
+							experimentation and expression. At
+							our core, we are seekers, in life and in
+							style. {'"'}You Can Surf Later{'"'} is our
+							way of saying to enjoy life{"'"}s adventures,
+							wherever our feet take us.
 						</p>
 					</AnimateInContent>
 				</AnimateIn>

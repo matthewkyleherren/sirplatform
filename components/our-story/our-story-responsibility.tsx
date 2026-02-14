@@ -4,7 +4,6 @@ import { Image } from '@/components/image'
 import { Link } from '@/components/link'
 import {
 	AnimateIn,
-	AnimateInWords,
 	AnimateInContent,
 } from '@/components/primitives/animate-in'
 import s from './our-story-responsibility.module.css'
@@ -19,7 +18,7 @@ const pillars = [
 		body: 'Season after season, we continue to expand our Invasive Species and Recycled Materials collections to create regenerative and repurposed leather, suede, cotton and other fibers to help reduce our planetary impact.',
 	},
 	{
-		title: 'Packaging & Shipping',
+		title: 'Packaging & Tracing',
 		body: 'Excess packaging is a thing of the past. You can expect P448 orders to be packed in our patented reusable dustbag that ships to you in a 100% recycled box, without packing slips or single-use paper materials.',
 	},
 	{
@@ -31,21 +30,25 @@ const pillars = [
 export function OurStoryResponsibility() {
 	return (
 		<section className={s.section}>
-			{/* Kicker */}
-			<p className={s.kicker}>Responsibility</p>
+			{/* Section heading */}
+			<div className={s.header}>
+				<AnimateIn>
+					<AnimateInContent>
+						<h2 className={s.heading}>Responsibility</h2>
+					</AnimateInContent>
+				</AnimateIn>
+			</div>
 
-			{/* Pillars grid */}
-			<div className={s.grid}>
+			{/* Definition rows */}
+			<div className={s.rows}>
 				{pillars.map((pillar) => (
-					<div key={pillar.title} className={s.pillar}>
+					<div key={pillar.title} className={s.row}>
 						<AnimateIn>
-							<AnimateInWords
-								text={pillar.title}
-								tag="h2"
-								className={s.pillarTitle}
-							/>
 							<AnimateInContent>
-								<p className={s.pillarBody}>{pillar.body}</p>
+								<div className={s.rowInner}>
+									<h3 className={s.rowTitle}>{pillar.title}</h3>
+									<p className={s.rowBody}>{pillar.body}</p>
+								</div>
 							</AnimateInContent>
 						</AnimateIn>
 					</div>
@@ -67,19 +70,10 @@ export function OurStoryResponsibility() {
 				<div className={s.ctaContent}>
 					<AnimateIn>
 						<AnimateInContent>
-							<p className={s.ctaKicker}>{"Project Sustainability\u00AE"}</p>
-						</AnimateInContent>
-						<AnimateInWords
-							text="Our journey toward a more sustainable future"
-							tag="h2"
-							className={s.ctaTitle}
-						/>
-						<AnimateInContent>
-							<p className={s.ctaDescription}>
-								{"Project Sustainability\u00AE"} marks our most responsible and
-								eco-conscious innovations, from recycled materials to ethical
-								production practices.
-							</p>
+							<h2 className={s.ctaTitle}>
+								Project<br />
+								Sustainability
+							</h2>
 							<div className={s.ctaButtons}>
 								<Link href="#" className={s.ctaButtonPrimary}>
 									Shop now

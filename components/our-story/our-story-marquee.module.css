@@ -1,16 +1,7 @@
 .section {
-	padding: 4rem 0 3rem;
+	padding: 2.5rem 0;
 	overflow: hidden;
-}
-
-.kicker {
-	font-size: 0.6875rem;
-	line-height: 1.5;
-	text-transform: uppercase;
-	letter-spacing: 0.15em;
-	text-align: center;
-	margin-bottom: 1.5rem;
-	opacity: 0.5;
+	background: var(--Color_Background);
 }
 
 .track {
@@ -20,18 +11,19 @@
 }
 
 .text {
-	font-size: clamp(2.5rem, 6vw, 5rem);
+	font-size: clamp(2rem, 5vw, 3.75rem);
 	line-height: 1.1;
 	font-weight: 400;
 	flex-shrink: 0;
 	display: flex;
 	align-items: center;
+	color: var(--Color_Dark);
 }
 
 .separator {
 	display: inline-block;
-	padding: 0 0.6em;
-	opacity: 0.3;
+	padding: 0 0.5em;
+	opacity: 0.4;
 }
 
 @keyframes marquee {

@@ -1,11 +1,10 @@
 import { OurStoryHero } from '@/components/our-story/our-story-hero'
 import { OurStoryMarquee } from '@/components/our-story/our-story-marquee'
 import { OurStoryEditorialGrid } from '@/components/our-story/our-story-editorial-grid'
-import { OurStoryTextBlock } from '@/components/our-story/our-story-text-block'
 import { OurStoryResponsibility } from '@/components/our-story/our-story-responsibility'
 import { OurStoryMaterialTicker } from '@/components/our-story/our-story-material-ticker'
 import { OurStoryPillars } from '@/components/our-story/our-story-pillars'
-import { FloatingNav } from '@/components/sections/floating-nav/floating-nav'
+import { OurStoryStepIn } from '@/components/our-story/our-story-step-in'
 
 export const metadata = {
 	title: 'Our Story — P448',
@@ -18,11 +17,10 @@ export default function OurStoryPage() {
 			<OurStoryHero />
 			<OurStoryMarquee />
 			<OurStoryEditorialGrid />
-			<OurStoryTextBlock />
 			<OurStoryResponsibility />
 			<OurStoryMaterialTicker />
 			<OurStoryPillars />
-			<FloatingNav label="Shop Now" href="#" />
+			<OurStoryStepIn />
 		</>
 	)
 }
