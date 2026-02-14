@@ -31,7 +31,7 @@
 	body {
 		background: var(--Color_Background);
 		color: var(--Color_Dark);
-		font-family: var(--font-apercu), system-ui, sans-serif;
+		font-family: var(--Font_Family-body);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
