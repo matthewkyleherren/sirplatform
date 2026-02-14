@@ -1,0 +1,168 @@
+.panel {
+	inline-size: 300px;
+	flex: 1 1 300px;
+	padding: 20px;
+	background: var(--Color_Background, #e6e3e6);
+	color: #222;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-apercu), "Apercu Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-size: 12px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	padding: 0 0 1rem;
+}
+
+.titleRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.productName {
+	margin: 0;
+	font-size: 12px;
+}
+
+.wishlist {
+	border: none;
+	background: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.price {
+	margin: 0;
+}
+
+.taxRow {
+	display: flex;
+	gap: 0.5rem;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+}
+
+.taxRow a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.description {
+	font-size: 13px;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	text-transform: none;
+	color: #222;
+	padding-right: 0.5rem;
+}
+
+.readMore {
+	border: none;
+	background: none;
+	padding: 0;
+	font-size: 10px;
+	letter-spacing: 0.4em;
+	cursor: pointer;
+	color: inherit;
+	margin-top: 0.25rem;
+}
+
+.detailNav {
+	display: grid;
+	gap: 0.45rem;
+	padding: 1rem 0;
+}
+
+.detailLink {
+	border: none;
+	background: none;
+	text-align: left;
+	font-size: 10px;
+	font-family: 'Apercu Mono Pro', var(--font-apercu), monospace;
+	letter-spacing: 0.3em;
+	cursor: pointer;
+	padding: 0;
+}
+
+.detailRow {
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+}
+
+.detailRow span:last-child {
+	color: #0e3cf6;
+}
+
+.sizeCard {
+	margin-top: auto;
+	background: #fff;
+	border-radius: 18px 18px 0 0;
+	padding: 1.25rem 1.25rem 0.5rem;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.sizeHeader {
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+}
+
+.sizeGuide {
+	border: none;
+	background: none;
+	padding: 0;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	color: inherit;
+}
+
+.selector {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f5f5f5;
+	border-radius: 10px;
+	padding: 0.75rem 1rem;
+	font-size: 12px;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+.selector span:last-child {
+	letter-spacing: 0;
+}
+
+.ctaButton {
+	margin: 1rem 0 0;
+	width: 100%;
+	border: none;
+	background: #0d39fb;
+	color: #fff;
+	padding: 1.5rem 1.25rem;
+	border-radius: 0 0 25px 25px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.ctaButton svg {
+	width: 18px;
+	height: 18px;
+}

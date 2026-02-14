@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/nter/p4a/p448-poc/components/product/product-tabs.module.css"],"sourcesContent":[".wrapper {\n\tmargin-top: 6rem;\n\tpadding-inline: var(--Navigation_Column);\n\tcolor: inherit;\n}\n\n@media (max-width: 900px) {\n\t.wrapper {\n\t\tpadding-inline: var(--Site_Margin);\n\t}\n}\n\n.tabs {\n\tdisplay: flex;\n\tgap: 2rem;\n\tborder-bottom: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.tab {\n\tfont-size: 0.75rem;\n\tpadding: 0.85rem 0;\n\ttext-transform: uppercase;\n\tletter-spacing: 0.35em;\n\tcursor: pointer;\n\tbackground: none;\n\tborder: none;\n\tposition: relative;\n\tcolor: rgba(0, 0, 0, 0.35);\n}\n\n.tabActive {\n\tcolor: #111;\n}\n\n.tabActive::after {\n\tcontent: \"\";\n\tposition: absolute;\n\tleft: 0;\n\tright: 0;\n\tbottom: -1px;\n\theight: 2px;\n\tbackground: #111;\n}\n\n.panel {\n\tpadding: 2.5rem 0;\n\tfont-size: 1rem;\n\tline-height: 1.7;\n\tmax-width: 860px;\n}\n\n.panel ul {\n\tpadding-left: 1.25rem;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;EACC;;;;;AAKD;;;;;;AAMA;;;;;;;;;;;;AAYA;;;;AAIA;;;;;;;;;;AAUA;;;;;;;AAOA"}}]
+}

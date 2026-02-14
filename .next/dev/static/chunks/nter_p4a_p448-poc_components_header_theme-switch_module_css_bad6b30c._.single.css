@@ -1,0 +1,49 @@
+/* [project]/nter/p4a/p448-poc/components/header/theme-switch.module.css [app-client] (css) */
+.theme-switch-module__9qmyba__switch {
+  color: var(--Color_Light);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  cursor: pointer;
+  background: #0003;
+  border: 1px solid #fff3;
+  border-radius: 999px;
+  align-items: center;
+  gap: .5rem;
+  padding: .25rem .75rem;
+  font-size: .625rem;
+  transition: background .2s, border-color .2s;
+  display: inline-flex;
+}
+
+.theme-switch-module__9qmyba__switch[data-theme="dark"] {
+  background: #ffffff1a;
+  border-color: #fff6;
+}
+
+.theme-switch-module__9qmyba__label {
+  white-space: nowrap;
+}
+
+.theme-switch-module__9qmyba__toggle {
+  background: #ffffff40;
+  border-radius: 999px;
+  block-size: 16px;
+  inline-size: 36px;
+  position: relative;
+}
+
+.theme-switch-module__9qmyba__knob {
+  background: var(--Color_Light);
+  border-radius: 50%;
+  block-size: 12px;
+  inline-size: 12px;
+  transition: transform .2s;
+  position: absolute;
+  inset-block-start: 2px;
+}
+
+.theme-switch-module__9qmyba__switch[data-theme="dark"] .theme-switch-module__9qmyba__knob {
+  transform: translateX(18px);
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_header_theme-switch_module_css_bad6b30c._.single.css.map*/

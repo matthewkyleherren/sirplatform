@@ -1,0 +1,64 @@
+/* [project]/nter/p4a/p448-poc/components/sections/editorial-content/editorial-content.module.css [app-client] (css) */
+.editorial-content-module__aoQ9Ta__section {
+  padding: 6rem 2rem;
+}
+
+.editorial-content-module__aoQ9Ta__grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.editorial-content-module__aoQ9Ta__headlineColumn {
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.editorial-content-module__aoQ9Ta__headline {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.editorial-content-module__aoQ9Ta__subheading {
+  opacity: .7;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.editorial-content-module__aoQ9Ta__bodyColumn {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.editorial-content-module__aoQ9Ta__body {
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+.editorial-content-module__aoQ9Ta__body p {
+  margin: 0 0 1em;
+}
+
+.editorial-content-module__aoQ9Ta__body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .editorial-content-module__aoQ9Ta__section {
+    padding: 4rem 1rem;
+  }
+
+  .editorial-content-module__aoQ9Ta__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=2bb6e_components_sections_editorial-content_editorial-content_module_css_bad6b30c._.single.css.map*/

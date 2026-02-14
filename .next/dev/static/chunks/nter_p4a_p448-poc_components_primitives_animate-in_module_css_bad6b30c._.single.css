@@ -1,0 +1,53 @@
+/* [project]/nter/p4a/p448-poc/components/primitives/animate-in.module.css [app-client] (css) */
+.animate-in-module__H3q2DG__wrapper[data-animate] .animate-in-module__H3q2DG__word {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-in-module__H3q2DG__word {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(.16, 1, .3, 1), transform .6s cubic-bezier(.16, 1, .3, 1);
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+.animate-in-module__H3q2DG__word:first-child {
+  transition-delay: 0s;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(2), .animate-in-module__H3q2DG__word:nth-child(3) {
+  transition-delay: 50ms;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(4) {
+  transition-delay: .15s;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(5) {
+  transition-delay: .2s;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(6) {
+  transition-delay: .25s;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(7) {
+  transition-delay: .3s;
+}
+
+.animate-in-module__H3q2DG__word:nth-child(8) {
+  transition-delay: .35s;
+}
+
+.animate-in-module__H3q2DG__content {
+  opacity: 0;
+  transition: opacity .8s .3s, transform .8s .3s;
+  transform: translateY(20px);
+}
+
+.animate-in-module__H3q2DG__wrapper[data-animate] .animate-in-module__H3q2DG__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_primitives_animate-in_module_css_bad6b30c._.single.css.map*/

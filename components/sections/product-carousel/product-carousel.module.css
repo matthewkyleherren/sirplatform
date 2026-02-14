@@ -1,0 +1,242 @@
+.section {
+	border-block-start: 1px solid var(--Color_Border);
+}
+
+@media (min-width: 900.02px) {
+	.section {
+		padding-inline-start: var(--Navigation_Column);
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	block-size: 66px;
+	padding-inline: var(--Site_Margin);
+	border-block-end: 1px solid var(--Color_Border);
+}
+
+.headerTitle {
+	font-size: 1.375rem;
+	line-height: 1.3;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.headerActions {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.headerLink {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	color: inherit;
+}
+
+.headerArrows {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.arrowButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border: 1px solid var(--color-border, #e0e0e0);
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.arrowButton:hover {
+	background-color: var(--color-text, #222);
+	color: var(--color-text-inverse, #fff);
+}
+
+.carousel {
+	overflow: hidden;
+}
+
+.carousel :global(.keen-slider__slide) {
+	border-inline-end: 1px solid var(--Color_Border);
+	padding: var(--Site_Margin);
+}
+
+.carousel :global(.keen-slider__slide:last-child) {
+	border-inline-end: none;
+}
+
+/* Product Card */
+.card {
+	position: relative;
+}
+
+.cardLink {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	text-decoration: none;
+}
+
+.srOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.cardMediaContainer {
+	position: relative;
+	overflow: hidden;
+}
+
+.cardTags {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 2;
+	display: flex;
+	gap: 0.25rem;
+}
+
+.cardTag {
+	font-size: 0.625rem;
+	line-height: 1;
+	padding: 0.25rem 0.5rem;
+	background: var(--color-background, #fff);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.cardImages {
+	position: relative;
+	aspect-ratio: 2100 / 2620;
+	background: var(--Color_Background);
+}
+
+.cardImage {
+	position: absolute;
+	inset: 0;
+	transition: opacity 0.4s ease;
+}
+
+.cardImageHidden {
+	opacity: 0;
+}
+
+.cardImageHover {
+	opacity: 0;
+}
+
+.cardImageVisible {
+	opacity: 1;
+}
+
+.cardImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Card body */
+.cardBody {
+	padding: 0.75rem 0 0;
+}
+
+.cardTitle {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 0;
+}
+
+.cardContent {
+	margin-top: 0.25rem;
+}
+
+.cardPriceRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cardPrice {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.cardComparePrice {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.cardQuickAdd {
+	position: relative;
+	z-index: 2;
+	background: none;
+	border: 1px solid var(--color-border, #e0e0e0);
+	padding: 0.375rem 0.75rem;
+	font-size: 0.6875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.cardQuickAdd:hover {
+	background-color: var(--color-text, #222);
+	color: var(--color-text-inverse, #fff);
+}
+
+.cardQuickAddText {
+	display: inline-block;
+}
+
+.cardColors {
+	display: flex;
+	gap: 0.375rem;
+	margin-top: 0.5rem;
+}
+
+.cardColor {
+	position: relative;
+	z-index: 2;
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--swatch-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
+}
+
+.cardColor:hover {
+	transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+	.headerArrows {
+		display: none;
+	}
+
+	.cardQuickAdd {
+		display: none;
+	}
+}

@@ -1,0 +1,57 @@
+/* [project]/nter/p4a/p448-poc/components/product/product-tabs.module.css [app-client] (css) */
+.product-tabs-module__5YHNnG__wrapper {
+  padding-inline: var(--Navigation_Column);
+  color: inherit;
+  margin-top: 6rem;
+}
+
+@media (max-width: 900px) {
+  .product-tabs-module__5YHNnG__wrapper {
+    padding-inline: var(--Site_Margin);
+  }
+}
+
+.product-tabs-module__5YHNnG__tabs {
+  border-bottom: 1px solid #00000014;
+  gap: 2rem;
+  display: flex;
+}
+
+.product-tabs-module__5YHNnG__tab {
+  text-transform: uppercase;
+  letter-spacing: .35em;
+  cursor: pointer;
+  color: #00000059;
+  background: none;
+  border: none;
+  padding: .85rem 0;
+  font-size: .75rem;
+  position: relative;
+}
+
+.product-tabs-module__5YHNnG__tabActive {
+  color: #111;
+}
+
+.product-tabs-module__5YHNnG__tabActive:after {
+  content: "";
+  background: #111;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+.product-tabs-module__5YHNnG__panel {
+  max-width: 860px;
+  padding: 2.5rem 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.product-tabs-module__5YHNnG__panel ul {
+  padding-left: 1.25rem;
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_product_product-tabs_module_css_bad6b30c._.single.css.map*/

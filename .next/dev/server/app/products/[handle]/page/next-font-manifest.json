@@ -1,0 +1,12 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/nter/p4a/p448-poc/app/products/[handle]/page": [
+      "static/media/apercu_pro_regular-s.p.b4de2c9f.woff2",
+      "static/media/apercu_pro_medium-s.p.04bc408f.woff2",
+      "static/media/apercu_pro_regular_italic-s.p.d0368991.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

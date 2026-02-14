@@ -1,0 +1,43 @@
+/* [project]/nter/p4a/p448-poc/components/sections/floating-nav/floating-nav.module.css [app-client] (css) */
+.floating-nav-module__B8kR-G__container {
+  z-index: 50;
+  transition: opacity .3s, transform .3s;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floating-nav-module__B8kR-G__visible {
+  opacity: 1;
+  transform: translateX(-50%)translateY(0);
+}
+
+.floating-nav-module__B8kR-G__hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%)translateY(20px);
+}
+
+.floating-nav-module__B8kR-G__button {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: var(--color-text, #222);
+  color: var(--color-text-inverse, #fff);
+  white-space: nowrap;
+  border-radius: 999px;
+  align-items: center;
+  padding: .75rem 1.5rem;
+  font-size: .75rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .2s, transform .2s;
+  display: inline-flex;
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.floating-nav-module__B8kR-G__button:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=c5121_p4a_p448-poc_components_sections_floating-nav_floating-nav_module_css_bad6b30c._.single.css.map*/

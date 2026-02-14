@@ -1,0 +1,90 @@
+/* [project]/nter/p4a/p448-poc/components/sections/ticker-text/ticker-text.module.css [app-client] (css) */
+.ticker-text-module__F2_lwq__section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 6rem 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 900.02px) {
+  .ticker-text-module__F2_lwq__section {
+    padding-inline-start: var(--Navigation_Column);
+  }
+}
+
+.ticker-text-module__F2_lwq__media {
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.ticker-text-module__F2_lwq__tickerContainer {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.ticker-text-module__F2_lwq__ticker {
+  white-space: nowrap;
+  will-change: transform;
+  display: flex;
+}
+
+.ticker-text-module__F2_lwq__tickerMessage {
+  color: var(--color-text-inverse, #fff);
+  flex-shrink: 0;
+  padding: 0 .5em;
+  font-size: clamp(3rem, 7vw, 6.125rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.ticker-text-module__F2_lwq__buttonContainer {
+  z-index: 1;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.ticker-text-module__F2_lwq__button {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border: 1px solid #0000;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  font-size: .8125rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: inline-flex;
+}
+
+.ticker-text-module__F2_lwq__buttonPrimary {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+.ticker-text-module__F2_lwq__buttonPrimary:hover, .ticker-text-module__F2_lwq__buttonSecondary {
+  color: var(--color-text-inverse, #fff);
+  border-color: var(--color-text-inverse, #fff);
+  background-color: #0000;
+}
+
+.ticker-text-module__F2_lwq__buttonSecondary:hover {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+@media (max-width: 767px) {
+  .ticker-text-module__F2_lwq__section {
+    min-height: 40vh;
+    padding: 4rem 0;
+  }
+}
+
+/*# sourceMappingURL=c5121_p4a_p448-poc_components_sections_ticker-text_ticker-text_module_css_bad6b30c._.single.css.map*/

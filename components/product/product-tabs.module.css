@@ -1,0 +1,54 @@
+.wrapper {
+	margin-top: 6rem;
+	padding-inline: var(--Navigation_Column);
+	color: inherit;
+}
+
+@media (max-width: 900px) {
+	.wrapper {
+		padding-inline: var(--Site_Margin);
+	}
+}
+
+.tabs {
+	display: flex;
+	gap: 2rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tab {
+	font-size: 0.75rem;
+	padding: 0.85rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	cursor: pointer;
+	background: none;
+	border: none;
+	position: relative;
+	color: rgba(0, 0, 0, 0.35);
+}
+
+.tabActive {
+	color: #111;
+}
+
+.tabActive::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	height: 2px;
+	background: #111;
+}
+
+.panel {
+	padding: 2.5rem 0;
+	font-size: 1rem;
+	line-height: 1.7;
+	max-width: 860px;
+}
+
+.panel ul {
+	padding-left: 1.25rem;
+}

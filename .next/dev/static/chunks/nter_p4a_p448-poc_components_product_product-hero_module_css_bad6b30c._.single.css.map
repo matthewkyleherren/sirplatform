@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/nter/p4a/p448-poc/components/product/product-hero.module.css"],"sourcesContent":[".hero {\n\tdisplay: grid;\n\tgrid-template-columns: minmax(0, 2.2fr) minmax(360px, 0.8fr);\n\tmin-height: 100vh;\n\tbackground: #050505;\n\tcolor: #fff;\n}\n\n.galleryColumn {\n\tposition: relative;\n}\n\n.detailColumn {\n\tposition: relative;\n\tbackground: var(--Color_Background);\n\tborder-inline-start: 1px solid var(--Color_Border);\n\tdisplay: flex;\n\tjustify-content: center;\n}\n\n@media (min-width: 1025px) {\n\t.detailColumn {\n\t\tposition: sticky;\n\t\ttop: var(--Announcement_Height);\n\t\talign-self: start;\n\t\theight: 100vh;\n\t}\n}\n\n@media (max-width: 1024px) {\n\t.hero {\n\t\tgrid-template-columns: 1fr;\n\t}\n\n\t.detailColumn {\n\t\tposition: static;\n\t\theight: auto;\n\t}\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;AAIA;;;;;;;;AAQA;EACC;;;;;;;;AAQD;EACC;;;;EAIA"}}]
+}

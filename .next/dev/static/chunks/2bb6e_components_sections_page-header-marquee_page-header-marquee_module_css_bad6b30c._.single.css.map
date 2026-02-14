@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/nter/p4a/p448-poc/components/sections/page-header-marquee/page-header-marquee.module.css"],"sourcesContent":[".section {\n\toverflow: hidden;\n\tpadding: 3rem 0;\n}\n\n.track {\n\tdisplay: flex;\n\twhite-space: nowrap;\n\tanimation: marquee var(--marquee-duration, 20s) linear infinite;\n}\n\n.text {\n\tfont-size: clamp(3rem, 7vw, 6.125rem);\n\tline-height: 1.1;\n\tfont-weight: 400;\n\tmargin: 0;\n\tpadding: 0 0.5em;\n\tflex-shrink: 0;\n}\n\n@keyframes marquee {\n\t0% {\n\t\ttransform: translateX(0);\n\t}\n\t100% {\n\t\ttransform: translateX(-33.333%);\n\t}\n}\n\n@media (prefers-reduced-motion: reduce) {\n\t.track {\n\t\tanimation: none;\n\t}\n}\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;AAMA;;;;;;;;;AASA;;;;;;;;;;AASA;EACC"}}]
+}

@@ -1,0 +1,70 @@
+/* [project]/nter/p4a/p448-poc/components/product/product-reviews.module.css [app-client] (css) */
+.product-reviews-module__sdhgnq__summary {
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.product-reviews-module__sdhgnq__score {
+  letter-spacing: .2em;
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.product-reviews-module__sdhgnq__stars {
+  letter-spacing: .4em;
+  font-size: 1.2rem;
+}
+
+.product-reviews-module__sdhgnq__meta {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #0009;
+  font-size: .9rem;
+}
+
+.product-reviews-module__sdhgnq__cards {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  display: grid;
+}
+
+.product-reviews-module__sdhgnq__card {
+  border: 1px solid #0000001a;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.product-reviews-module__sdhgnq__cardTitle {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.product-reviews-module__sdhgnq__cardBody {
+  color: #000000bf;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.product-reviews-module__sdhgnq__cardMeta {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #00000080;
+  font-size: .8rem;
+}
+
+@media (max-width: 768px) {
+  .product-reviews-module__sdhgnq__summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_product_product-reviews_module_css_bad6b30c._.single.css.map*/

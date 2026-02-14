@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/nter/p4a/p448-poc/components/sections/floating-nav/floating-nav.module.css"],"sourcesContent":[".container {\n\tposition: fixed;\n\tbottom: 2rem;\n\tleft: 50%;\n\ttransform: translateX(-50%);\n\tz-index: 50;\n\ttransition: opacity 0.3s ease, transform 0.3s ease;\n}\n\n.visible {\n\topacity: 1;\n\ttransform: translateX(-50%) translateY(0);\n}\n\n.hidden {\n\topacity: 0;\n\ttransform: translateX(-50%) translateY(20px);\n\tpointer-events: none;\n}\n\n.button {\n\tdisplay: inline-flex;\n\talign-items: center;\n\tpadding: 0.75rem 1.5rem;\n\tfont-size: 0.75rem;\n\tline-height: 1;\n\ttext-decoration: none;\n\ttext-transform: uppercase;\n\tletter-spacing: 0.1em;\n\tbackground: var(--color-text, #222);\n\tcolor: var(--color-text-inverse, #fff);\n\tborder-radius: 999px;\n\tbox-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n\ttransition: background-color 0.2s, transform 0.2s;\n\twhite-space: nowrap;\n}\n\n.button:hover {\n\ttransform: scale(1.05);\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;AAKA;;;;;;AAMA;;;;;;;;;;;;;;;;;AAiBA"}}]
+}

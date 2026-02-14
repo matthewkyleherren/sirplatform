@@ -1,0 +1,142 @@
+.section {
+	padding: 3rem 0;
+}
+
+.kicker {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 0 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.carouselWrapper {
+	position: relative;
+}
+
+.slide {
+	position: relative;
+	height: 80vh;
+	overflow: hidden;
+}
+
+.slideMedia {
+	position: absolute;
+	inset: 0;
+}
+
+.slideContent {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	z-index: 2;
+	max-width: 600px;
+	color: var(--color-text-inverse, #fff);
+}
+
+.slideKicker {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.5rem;
+}
+
+.slideTitle {
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	line-height: 1.1;
+	font-weight: 400;
+	margin: 0;
+}
+
+.slideDescription {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	margin-top: 1rem;
+}
+
+.slideButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.8125rem;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-top: 1.5rem;
+	border: 1px solid transparent;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.slideButtonPrimary {
+	background-color: var(--color-text-inverse, #fff);
+	color: var(--color-text, #222);
+}
+
+.slideButtonPrimary:hover {
+	background-color: transparent;
+	color: var(--color-text-inverse, #fff);
+	border-color: var(--color-text-inverse, #fff);
+}
+
+.slideButtonSecondary {
+	background-color: transparent;
+	color: var(--color-text-inverse, #fff);
+	border-color: var(--color-text-inverse, #fff);
+}
+
+.slideButtonSecondary:hover {
+	background-color: var(--color-text-inverse, #fff);
+	color: var(--color-text, #222);
+}
+
+/* Arrows */
+.arrows {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 3;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.arrowButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.arrowButton:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+	.kicker {
+		padding: 0 1rem;
+	}
+
+	.slide {
+		height: 60vh;
+	}
+
+	.slideContent {
+		padding: 1.5rem;
+	}
+
+	.arrows {
+		bottom: 1.5rem;
+		right: 1.5rem;
+	}
+}

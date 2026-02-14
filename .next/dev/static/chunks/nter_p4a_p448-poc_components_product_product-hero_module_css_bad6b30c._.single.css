@@ -1,0 +1,42 @@
+/* [project]/nter/p4a/p448-poc/components/product/product-hero.module.css [app-client] (css) */
+.product-hero-module__B_dVpW__hero {
+  color: #fff;
+  background: #050505;
+  grid-template-columns: minmax(0, 2.2fr) minmax(360px, .8fr);
+  min-height: 100vh;
+  display: grid;
+}
+
+.product-hero-module__B_dVpW__galleryColumn {
+  position: relative;
+}
+
+.product-hero-module__B_dVpW__detailColumn {
+  background: var(--Color_Background);
+  border-inline-start: 1px solid var(--Color_Border);
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .product-hero-module__B_dVpW__detailColumn {
+    top: var(--Announcement_Height);
+    align-self: start;
+    height: 100vh;
+    position: sticky;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-hero-module__B_dVpW__hero {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero-module__B_dVpW__detailColumn {
+    height: auto;
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_product_product-hero_module_css_bad6b30c._.single.css.map*/

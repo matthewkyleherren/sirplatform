@@ -1,0 +1,297 @@
+.section {
+	position: relative;
+	overflow: hidden;
+}
+
+/* Aspect ratio trick matching original: 200% mobile, 80% desktop */
+.section::after {
+	content: "";
+	display: block;
+	padding-block-start: 200%;
+}
+
+@media (min-width: 900.02px) {
+	.section {
+		max-block-size: calc(100vh - var(--Announcement_Height, 24px));
+		padding-inline-start: var(--Navigation_Column);
+	}
+
+	.section::after {
+		padding-block-start: 80%;
+	}
+}
+
+.media {
+	position: absolute;
+	inset: 0;
+}
+
+/* No negative offset needed — section is full-width, media fills it */
+
+.videoOverlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+
+.content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	z-index: 2;
+	max-width: 600px;
+	color: var(--Color_Light, #fff);
+}
+
+@media (min-width: 900.02px) {
+	.content {
+		left: var(--Navigation_Column);
+		padding: var(--Site_Margin) calc(var(--Site_Margin) * 2) calc(var(--Site_Margin) * 3);
+	}
+}
+
+.kicker {
+	font-size: 0.875rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5rem;
+}
+
+.title {
+	font-size: clamp(2.5rem, 9vw, 4.75rem);
+	line-height: 1.1;
+	font-weight: 400;
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+	.title {
+		font-size: clamp(3.625rem, 8vw, 5.5rem);
+	}
+}
+
+@media (min-width: 900.02px) {
+	.title {
+		font-size: clamp(5rem, 6vw, 6.875rem);
+	}
+}
+
+.description {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	margin-top: 1rem;
+}
+
+.buttons {
+	display: flex;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0;
+	font-size: 1rem;
+	line-height: 1.2;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: 0.04em;
+	border: none;
+	transition: opacity 0.3s;
+	color: inherit;
+}
+
+.button::before {
+	content: "";
+	inline-size: 6px;
+	block-size: 6px;
+	border-radius: 50%;
+	background: currentColor;
+}
+
+.buttonText {
+	display: inline-block;
+	padding-inline-start: 0.35rem;
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+.buttonPrimary {
+	color: var(--Color_Light, #fff);
+}
+
+.buttonSecondary {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+/* Quick Products */
+.quickProducts {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.quickProduct {
+	position: absolute;
+	left: var(--qp-x);
+	top: var(--qp-y);
+	pointer-events: auto;
+}
+
+.quickProductDot {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9);
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.quickProductPulse {
+	position: absolute;
+	inset: -4px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0%, 100% { transform: scale(1); opacity: 1; }
+	50% { transform: scale(1.3); opacity: 0; }
+}
+
+.quickProductTooltip {
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+
+.quickProduct:hover .quickProductTooltip {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.quickProductLink {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25rem;
+	background: var(--color-background, #fff);
+	padding: 0.5rem;
+	border-radius: 4px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.quickProductImage {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.quickProductName {
+	font-size: 0.625rem;
+	color: var(--color-text, #222);
+}
+
+.floatingMenu {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	z-index: 3;
+}
+
+@media (min-width: 900.02px) {
+	.floatingMenu {
+		top: 2rem;
+		right: calc(var(--Site_Margin) * 2);
+	}
+}
+
+.floatingToggle {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	border: none;
+	background: rgba(255, 255, 255, 0.9);
+	color: #111;
+	font-size: 1.5rem;
+	line-height: 1;
+	cursor: pointer;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.floatingPanel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(0, -10px);
+	background: rgba(255, 255, 255, 0.95);
+	color: #111;
+	padding: 0.75rem 1rem;
+	border-radius: 12px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	min-width: 180px;
+}
+
+.floatingMenu:hover .floatingPanel,
+.floatingMenu:focus-within .floatingPanel {
+	opacity: 1;
+	transform: translate(0, 10px);
+	pointer-events: auto;
+}
+
+.floatingLabel {
+	font-size: 0.6875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin: 0 0 0.5rem;
+}
+
+.floatingList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.floatingList a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+	.content {
+		padding: 1.5rem;
+		max-width: none;
+	}
+
+	.title {
+		font-size: clamp(2rem, 8vw, 3rem);
+	}
+
+	.quickProducts {
+		display: none;
+	}
+}

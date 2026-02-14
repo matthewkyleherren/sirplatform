@@ -1,0 +1,84 @@
+/* [project]/nter/p4a/p448-poc/components/product/product-modal.module.css [app-client] (css) */
+.product-modal-module__GH-uba__trigger {
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #17171740;
+  border-radius: 999px;
+  padding: .6rem 1rem;
+  font-size: .75rem;
+}
+
+.product-modal-module__GH-uba__overlay {
+  z-index: 120;
+  background: #00000073;
+  position: fixed;
+  inset: 0;
+}
+
+.product-modal-module__GH-uba__content {
+  background: var(--ProductPanel_BG, #f1f1ef);
+  color: var(--ProductPanel_Text, #171717);
+  z-index: 130;
+  border-radius: 24px;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(540px, 90vw);
+  max-height: 85vh;
+  padding: 2.5rem;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 25px 60px #0006;
+}
+
+@media (max-width: 600px) {
+  .product-modal-module__GH-uba__content {
+    border-radius: 20px 20px 0 0;
+    max-block-size: 90vh;
+    padding: 1.5rem;
+    inset-block-end: 0;
+    inset-inline: 0;
+    transform: none;
+  }
+}
+
+.product-modal-module__GH-uba__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.product-modal-module__GH-uba__body {
+  color: inherit;
+  flex: 1;
+  font-size: .95rem;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.product-modal-module__GH-uba__body ul {
+  gap: .5rem;
+  padding-left: 1.25rem;
+  display: grid;
+}
+
+.product-modal-module__GH-uba__close {
+  letter-spacing: .2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #0000000d;
+  border: 1px solid #17171726;
+  border-radius: 30px;
+  padding: .25rem .75rem;
+  font-size: .8rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_product_product-modal_module_css_bad6b30c._.single.css.map*/

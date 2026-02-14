@@ -1,0 +1,79 @@
+/* [project]/nter/p4a/p448-poc/components/header/header-ticker.module.css [app-client] (css) */
+.header-ticker-module__mPv9-G__bar {
+  background: var(--Color_Announcement_BG, #0a0a0a);
+  z-index: 99;
+  height: var(--Announcement_Height);
+  color: var(--Color_Announcement_Text, var(--Color_Light));
+  border-bottom: 1px solid #ffffff1a;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 15px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-ticker-module__mPv9-G__ticker {
+  white-space: nowrap;
+  flex: 1;
+  overflow: hidden;
+}
+
+.header-ticker-module__mPv9-G__track {
+  animation: header-ticker-module__mPv9-G__ticker-scroll var(--ticker-speed, 30s) linear infinite;
+  display: inline-flex;
+}
+
+.header-ticker-module__mPv9-G__items {
+  align-items: center;
+  gap: 0;
+  display: inline-flex;
+}
+
+.header-ticker-module__mPv9-G__item {
+  align-items: center;
+  display: inline-flex;
+}
+
+.header-ticker-module__mPv9-G__separator {
+  margin: 0 .25rem;
+}
+
+.header-ticker-module__mPv9-G__text {
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: inherit;
+  align-items: center;
+  gap: .25rem;
+  font-size: .625rem;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.header-ticker-module__mPv9-G__arrow {
+  width: .5rem;
+  height: .5rem;
+  display: inline-block;
+}
+
+@keyframes header-ticker-module__mPv9-G__ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-ticker-module__mPv9-G__track {
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_header_header-ticker_module_css_bad6b30c._.single.css.map*/

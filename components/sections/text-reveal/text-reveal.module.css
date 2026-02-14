@@ -1,0 +1,70 @@
+.section {
+	position: relative;
+	padding: 6rem 2rem;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+}
+
+.media {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: #000;
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.caption {
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 1.5rem;
+	color: var(--color-text, #222);
+}
+
+.text {
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	line-height: 1.3;
+	font-weight: 400;
+	margin: 0;
+}
+
+.textInverse .word {
+	--color-reveal-active: var(--color-text-inverse, #fff);
+	--color-reveal-inactive: rgba(255, 255, 255, 0.3);
+}
+
+.word {
+	--color-reveal-active: var(--color-text, #222);
+	--color-reveal-inactive: var(--color-text-secondary, #ccc);
+
+	background: linear-gradient(
+		to right,
+		var(--color-reveal-active) var(--Reveal_Amount, 0%),
+		var(--color-reveal-inactive) var(--Reveal_Amount, 0%)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline;
+	transition: none;
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding: 4rem 1rem;
+	}
+}

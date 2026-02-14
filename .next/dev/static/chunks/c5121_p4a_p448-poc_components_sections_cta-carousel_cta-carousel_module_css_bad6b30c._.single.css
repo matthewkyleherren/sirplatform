@@ -1,0 +1,138 @@
+/* [project]/nter/p4a/p448-poc/components/sections/cta-carousel/cta-carousel.module.css [app-client] (css) */
+.cta-carousel-module__tbECEq__section {
+  padding: 3rem 0;
+}
+
+.cta-carousel-module__tbECEq__kicker {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.cta-carousel-module__tbECEq__carouselWrapper {
+  position: relative;
+}
+
+.cta-carousel-module__tbECEq__slide {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-carousel-module__tbECEq__slideMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.cta-carousel-module__tbECEq__slideContent {
+  z-index: 2;
+  max-width: 600px;
+  color: var(--color-text-inverse, #fff);
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cta-carousel-module__tbECEq__slideKicker {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .5rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.cta-carousel-module__tbECEq__slideTitle {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.cta-carousel-module__tbECEq__slideDescription {
+  margin-top: 1rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.cta-carousel-module__tbECEq__slideButton {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border: 1px solid #0000;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  padding: .75rem 1.5rem;
+  font-size: .8125rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: inline-flex;
+}
+
+.cta-carousel-module__tbECEq__slideButtonPrimary {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+.cta-carousel-module__tbECEq__slideButtonPrimary:hover, .cta-carousel-module__tbECEq__slideButtonSecondary {
+  color: var(--color-text-inverse, #fff);
+  border-color: var(--color-text-inverse, #fff);
+  background-color: #0000;
+}
+
+.cta-carousel-module__tbECEq__slideButtonSecondary:hover {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+.cta-carousel-module__tbECEq__arrows {
+  z-index: 3;
+  gap: .5rem;
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.cta-carousel-module__tbECEq__arrowButton {
+  color: #fff;
+  cursor: pointer;
+  background: #0000004d;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color .2s;
+  display: flex;
+}
+
+.cta-carousel-module__tbECEq__arrowButton:hover {
+  background: #0009;
+}
+
+@media (max-width: 767px) {
+  .cta-carousel-module__tbECEq__kicker {
+    padding: 0 1rem;
+  }
+
+  .cta-carousel-module__tbECEq__slide {
+    height: 60vh;
+  }
+
+  .cta-carousel-module__tbECEq__slideContent {
+    padding: 1.5rem;
+  }
+
+  .cta-carousel-module__tbECEq__arrows {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=c5121_p4a_p448-poc_components_sections_cta-carousel_cta-carousel_module_css_bad6b30c._.single.css.map*/

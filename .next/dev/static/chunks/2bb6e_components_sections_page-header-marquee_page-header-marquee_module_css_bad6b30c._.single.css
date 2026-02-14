@@ -1,0 +1,38 @@
+/* [project]/nter/p4a/p448-poc/components/sections/page-header-marquee/page-header-marquee.module.css [app-client] (css) */
+.page-header-marquee-module__XlZSgG__section {
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.page-header-marquee-module__XlZSgG__track {
+  white-space: nowrap;
+  animation: page-header-marquee-module__XlZSgG__marquee var(--marquee-duration, 20s) linear infinite;
+  display: flex;
+}
+
+.page-header-marquee-module__XlZSgG__text {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0 .5em;
+  font-size: clamp(3rem, 7vw, 6.125rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@keyframes page-header-marquee-module__XlZSgG__marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-header-marquee-module__XlZSgG__track {
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=2bb6e_components_sections_page-header-marquee_page-header-marquee_module_css_bad6b30c._.single.css.map*/

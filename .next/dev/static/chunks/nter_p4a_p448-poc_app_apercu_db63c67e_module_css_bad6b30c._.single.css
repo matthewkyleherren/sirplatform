@@ -1,0 +1,43 @@
+/* [project]/nter/p4a/p448-poc/app/apercu_db63c67e.module.css [app-client] (css) */
+@font-face {
+  font-family: apercu;
+  src: url("../media/apercu_pro_regular-s.p.b4de2c9f.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: apercu;
+  src: url("../media/apercu_pro_medium-s.p.04bc408f.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: apercu;
+  src: url("../media/apercu_pro_regular_italic-s.p.d0368991.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: apercu Fallback;
+  src: local(Arial);
+  ascent-override: 113.66%;
+  descent-override: 28.56%;
+  line-gap-override: 0.0%;
+  size-adjust: 98.46%;
+}
+
+.apercu_db63c67e-module__ygu7MW__className {
+  font-family: apercu, apercu Fallback;
+}
+
+.apercu_db63c67e-module__ygu7MW__variable {
+  --font-apercu: "apercu", "apercu Fallback";
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_app_apercu_db63c67e_module_css_bad6b30c._.single.css.map*/

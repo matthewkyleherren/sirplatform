@@ -1,0 +1,302 @@
+/* [project]/nter/p4a/p448-poc/components/sections/cta-single/cta-single.module.css [app-client] (css) */
+.cta-single-module__y4axwG__section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-single-module__y4axwG__section:after {
+  content: "";
+  padding-block-start: 200%;
+  display: block;
+}
+
+@media (min-width: 900.02px) {
+  .cta-single-module__y4axwG__section {
+    max-block-size: calc(100vh - var(--Announcement_Height, 24px));
+    padding-inline-start: var(--Navigation_Column);
+  }
+
+  .cta-single-module__y4axwG__section:after {
+    padding-block-start: 80%;
+  }
+}
+
+.cta-single-module__y4axwG__media {
+  position: absolute;
+  inset: 0;
+}
+
+.cta-single-module__y4axwG__videoOverlay {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+}
+
+.cta-single-module__y4axwG__content {
+  z-index: 2;
+  max-width: 600px;
+  color: var(--Color_Light, #fff);
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 900.02px) {
+  .cta-single-module__y4axwG__content {
+    left: var(--Navigation_Column);
+    padding: var(--Site_Margin) calc(var(--Site_Margin) * 2) calc(var(--Site_Margin) * 3);
+  }
+}
+
+.cta-single-module__y4axwG__kicker {
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.cta-single-module__y4axwG__title {
+  margin: 0;
+  font-size: clamp(2.5rem, 9vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .cta-single-module__y4axwG__title {
+    font-size: clamp(3.625rem, 8vw, 5.5rem);
+  }
+}
+
+@media (min-width: 900.02px) {
+  .cta-single-module__y4axwG__title {
+    font-size: clamp(5rem, 6vw, 6.875rem);
+  }
+}
+
+.cta-single-module__y4axwG__description {
+  margin-top: 1rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.cta-single-module__y4axwG__buttons {
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.cta-single-module__y4axwG__button {
+  text-transform: none;
+  letter-spacing: .04em;
+  color: inherit;
+  border: none;
+  align-items: center;
+  gap: .5rem;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: opacity .3s;
+  display: inline-flex;
+}
+
+.cta-single-module__y4axwG__button:before {
+  content: "";
+  background: currentColor;
+  border-radius: 50%;
+  block-size: 6px;
+  inline-size: 6px;
+}
+
+.cta-single-module__y4axwG__buttonText {
+  padding-inline-start: .35rem;
+  display: inline-block;
+}
+
+.cta-single-module__y4axwG__button:hover {
+  opacity: .7;
+}
+
+.cta-single-module__y4axwG__buttonPrimary {
+  color: var(--Color_Light, #fff);
+}
+
+.cta-single-module__y4axwG__buttonSecondary {
+  color: #ffffffbf;
+}
+
+.cta-single-module__y4axwG__quickProducts {
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.cta-single-module__y4axwG__quickProduct {
+  left: var(--qp-x);
+  top: var(--qp-y);
+  pointer-events: auto;
+  position: absolute;
+}
+
+.cta-single-module__y4axwG__quickProductDot {
+  cursor: pointer;
+  background: #ffffffe6;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+}
+
+.cta-single-module__y4axwG__quickProductPulse {
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  animation: 2s ease-in-out infinite cta-single-module__y4axwG__pulse;
+  position: absolute;
+  inset: -4px;
+}
+
+@keyframes cta-single-module__y4axwG__pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
+.cta-single-module__y4axwG__quickProductTooltip {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta-single-module__y4axwG__quickProduct:hover .cta-single-module__y4axwG__quickProductTooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cta-single-module__y4axwG__quickProductLink {
+  background: var(--color-background, #fff);
+  white-space: nowrap;
+  border-radius: 4px;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  padding: .5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.cta-single-module__y4axwG__quickProductImage {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+
+.cta-single-module__y4axwG__quickProductName {
+  color: var(--color-text, #222);
+  font-size: .625rem;
+}
+
+.cta-single-module__y4axwG__floatingMenu {
+  z-index: 3;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (min-width: 900.02px) {
+  .cta-single-module__y4axwG__floatingMenu {
+    top: 2rem;
+    right: calc(var(--Site_Margin) * 2);
+  }
+}
+
+.cta-single-module__y4axwG__floatingToggle {
+  color: #111;
+  cursor: pointer;
+  background: #ffffffe6;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.5rem;
+  line-height: 1;
+  box-shadow: 0 10px 25px #0003;
+}
+
+.cta-single-module__y4axwG__floatingPanel {
+  color: #111;
+  opacity: 0;
+  pointer-events: none;
+  background: #fffffff2;
+  border-radius: 12px;
+  min-width: 180px;
+  padding: .75rem 1rem;
+  transition: opacity .2s, transform .2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -10px);
+  box-shadow: 0 20px 50px #0003;
+}
+
+.cta-single-module__y4axwG__floatingMenu:hover .cta-single-module__y4axwG__floatingPanel, .cta-single-module__y4axwG__floatingMenu:focus-within .cta-single-module__y4axwG__floatingPanel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0, 10px);
+}
+
+.cta-single-module__y4axwG__floatingLabel {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 0 0 .5rem;
+  font-size: .6875rem;
+}
+
+.cta-single-module__y4axwG__floatingList {
+  gap: .25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.cta-single-module__y4axwG__floatingList a {
+  color: inherit;
+  font-size: .875rem;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .cta-single-module__y4axwG__content {
+    max-width: none;
+    padding: 1.5rem;
+  }
+
+  .cta-single-module__y4axwG__title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .cta-single-module__y4axwG__quickProducts {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_sections_cta-single_cta-single_module_css_bad6b30c._.single.css.map*/

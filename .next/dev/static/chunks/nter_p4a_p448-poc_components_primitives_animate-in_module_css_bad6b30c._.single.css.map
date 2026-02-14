@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/nter/p4a/p448-poc/components/primitives/animate-in.module.css"],"sourcesContent":[".wrapper[data-animate] .word {\n\topacity: 1;\n\ttransform: translateY(0);\n}\n\n.word {\n\tdisplay: inline-block;\n\topacity: 0;\n\ttransform: translateY(100%);\n\ttransition:\n\t\topacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),\n\t\ttransform 0.6s cubic-bezier(0.16, 1, 0.3, 1);\n}\n\n/* Stagger each word by 0.05s */\n.word:nth-child(1) {\n\ttransition-delay: 0s;\n}\n.word:nth-child(2) {\n\ttransition-delay: 0.05s;\n}\n.word:nth-child(3) {\n\ttransition-delay: 0.05s;\n}\n.word:nth-child(4) {\n\ttransition-delay: 0.15s;\n}\n.word:nth-child(5) {\n\ttransition-delay: 0.2s;\n}\n.word:nth-child(6) {\n\ttransition-delay: 0.25s;\n}\n.word:nth-child(7) {\n\ttransition-delay: 0.3s;\n}\n.word:nth-child(8) {\n\ttransition-delay: 0.35s;\n}\n\n/* Content (description, buttons) fades in */\n.content {\n\topacity: 0;\n\ttransform: translateY(20px);\n\ttransition:\n\t\topacity 0.8s ease 0.3s,\n\t\ttransform 0.8s ease 0.3s;\n}\n\n.wrapper[data-animate] .content {\n\topacity: 1;\n\ttransform: translateY(0);\n}\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;;AAUA;;;;AAGA;;;;AAMA;;;;AAGA;;;;AAGA;;;;AAGA;;;;AAGA;;;;AAKA;;;;;;AAQA"}}]
+}

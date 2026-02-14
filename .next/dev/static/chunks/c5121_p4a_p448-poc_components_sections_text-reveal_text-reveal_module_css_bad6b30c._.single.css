@@ -1,0 +1,68 @@
+/* [project]/nter/p4a/p448-poc/components/sections/text-reveal/text-reveal.module.css [app-client] (css) */
+.text-reveal-module__QPSo8W__section {
+  align-items: center;
+  min-height: 60vh;
+  padding: 6rem 2rem;
+  display: flex;
+  position: relative;
+}
+
+.text-reveal-module__QPSo8W__media {
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.text-reveal-module__QPSo8W__overlay {
+  z-index: 1;
+  background: #000;
+  position: absolute;
+  inset: 0;
+}
+
+.text-reveal-module__QPSo8W__content {
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-reveal-module__QPSo8W__caption {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--color-text, #222);
+  margin-bottom: 1.5rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.text-reveal-module__QPSo8W__text {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.text-reveal-module__QPSo8W__textInverse .text-reveal-module__QPSo8W__word {
+  --color-reveal-active: var(--color-text-inverse, #fff);
+  --color-reveal-inactive: #ffffff4d;
+}
+
+.text-reveal-module__QPSo8W__word {
+  --color-reveal-active: var(--color-text, #222);
+  --color-reveal-inactive: var(--color-text-secondary, #ccc);
+  background: linear-gradient(to right, var(--color-reveal-active) var(--Reveal_Amount, 0%), var(--color-reveal-inactive) var(--Reveal_Amount, 0%));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: none;
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .text-reveal-module__QPSo8W__section {
+    padding: 4rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=c5121_p4a_p448-poc_components_sections_text-reveal_text-reveal_module_css_bad6b30c._.single.css.map*/

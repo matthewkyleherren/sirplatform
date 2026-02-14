@@ -1,0 +1,101 @@
+.section {
+	position: relative;
+}
+
+@media (min-width: 900.02px) {
+	.section {
+		padding-inline-start: var(--Navigation_Column);
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.card {
+	position: relative;
+	height: 65vh;
+	overflow: hidden;
+}
+
+.cardMedia {
+	position: absolute;
+	inset: 0;
+}
+
+.cardVideoOverlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+
+.cardContent {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	z-index: 2;
+	color: var(--color-text-inverse, #fff);
+}
+
+.cardTitle {
+	font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+	line-height: 1.2;
+	font-weight: 400;
+	margin: 0;
+}
+
+.cardButtons {
+	margin-top: 1rem;
+}
+
+.cardButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.8125rem;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border: 1px solid transparent;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.cardButtonPrimary {
+	background-color: var(--color-text-inverse, #fff);
+	color: var(--color-text, #222);
+}
+
+.cardButtonPrimary:hover {
+	background-color: transparent;
+	color: var(--color-text-inverse, #fff);
+	border-color: var(--color-text-inverse, #fff);
+}
+
+.cardButtonSecondary {
+	background-color: transparent;
+	color: var(--color-text-inverse, #fff);
+	border-color: var(--color-text-inverse, #fff);
+}
+
+.cardButtonSecondary:hover {
+	background-color: var(--color-text-inverse, #fff);
+	color: var(--color-text, #222);
+}
+
+@media (max-width: 767px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+
+	.card {
+		height: 50vh;
+	}
+
+	.cardContent {
+		padding: 1.5rem;
+	}
+}

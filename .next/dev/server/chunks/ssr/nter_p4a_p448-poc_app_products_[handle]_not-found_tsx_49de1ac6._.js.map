@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/m/nter/p4a/p448-poc/app/products/%5Bhandle%5D/not-found.tsx"],"sourcesContent":["export default function ProductNotFound() {\n\treturn (\n\t\t<div style={{ padding: '4rem var(--Site_Margin)' }}>\n\t\t\t<h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Product not found</h1>\n\t\t\t<p>We couldn’t find that product. Try exploring our latest arrivals instead.</p>\n\t\t</div>\n\t)\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACvB,qBACC,4QAAC;QAAI,OAAO;YAAE,SAAS;QAA0B;;0BAChD,4QAAC;gBAAG,OAAO;oBAAE,UAAU;oBAAQ,cAAc;gBAAO;0BAAG;;;;;;0BACvD,4QAAC;0BAAE;;;;;;;;;;;;AAGN"}}]
+}

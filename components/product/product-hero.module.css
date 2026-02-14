@@ -1,0 +1,39 @@
+.hero {
+	display: grid;
+	grid-template-columns: minmax(0, 2.2fr) minmax(360px, 0.8fr);
+	min-height: 100vh;
+	background: #050505;
+	color: #fff;
+}
+
+.galleryColumn {
+	position: relative;
+}
+
+.detailColumn {
+	position: relative;
+	background: var(--Color_Background);
+	border-inline-start: 1px solid var(--Color_Border);
+	display: flex;
+	justify-content: center;
+}
+
+@media (min-width: 1025px) {
+	.detailColumn {
+		position: sticky;
+		top: var(--Announcement_Height);
+		align-self: start;
+		height: 100vh;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+
+	.detailColumn {
+		position: static;
+		height: auto;
+	}
+}

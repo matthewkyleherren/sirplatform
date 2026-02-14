@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "../lib/styles/typography.css";
+
+@layer base {
+	:root {
+		--Color_Brand: #0e3cf6;
+		--Color_Light: #fff;
+		--Color_Dark: #222;
+		--Color_Anchor: #fff;
+		--Color_Background: #e6e3e6;
+		--Color_Border: rgba(34, 34, 34, 0.1);
+		--Color_Announcement_BG: #0a0a0a;
+		--Color_Announcement_Text: #f1f1f1;
+		--ProductPanel_BG: #f0f0f0;
+		--ProductPanel_Text: #171717;
+		--Font_Family-body: "Apercu Pro", -apple-system, sans-serif;
+		--Site_Margin: 15px;
+		--Announcement_Height: 24px;
+		--Header_Height: 47px;
+		--Navigation_Width: 160px;
+		--Navigation_Column: calc(var(--Navigation_Width) + var(--Site_Margin) * 2);
+		--Border_Radius: 5px;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background: var(--Color_Background);
+		color: var(--Color_Dark);
+		font-family: var(--font-apercu), system-ui, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	body.theme-dark {
+		--Color_Background: #050505;
+		--Color_Anchor: #111;
+		--Color_Dark: #f5f5f5;
+		--Color_Border: rgba(255, 255, 255, 0.15);
+		--Color_Announcement_BG: #f5f5f5;
+		--Color_Announcement_Text: #050505;
+		--ProductPanel_BG: #090909;
+		--ProductPanel_Text: #fefefe;
+		background: var(--Color_Background);
+		color: var(--Color_Dark);
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	@media (min-width: 900.02px) {
+		:root {
+			--Site_Margin: 20px;
+			--Announcement_Height: 30px;
+			--Header_Height: auto;
+		}
+
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	[data-animate],
+	.parallax-image {
+		animation: none !important;
+		transition: none !important;
+		transform: none !important;
+	}
+}
+
+/* Button base */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid currentColor;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+	background: var(--Color_Dark);
+	color: var(--Color_Light);
+	border-color: var(--Color_Dark);
+}
+
+.btn-primary:hover {
+	opacity: 0.85;
+}
+
+.btn-secondary {
+	background: transparent;
+	color: currentColor;
+}
+
+.btn-secondary:hover {
+	background: var(--Color_Dark);
+	color: var(--Color_Light);
+}
+
+
+/* Faux link pattern */
+.faux-link {
+	position: relative;
+}
+
+.faux-link a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}

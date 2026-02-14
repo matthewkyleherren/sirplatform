@@ -1,0 +1,98 @@
+/* [project]/nter/p4a/p448-poc/components/sections/cta-split/cta-split.module.css [app-client] (css) */
+.cta-split-module__kmulQG__section {
+  position: relative;
+}
+
+@media (min-width: 900.02px) {
+  .cta-split-module__kmulQG__section {
+    padding-inline-start: var(--Navigation_Column);
+  }
+}
+
+.cta-split-module__kmulQG__grid {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.cta-split-module__kmulQG__card {
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-split-module__kmulQG__cardMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.cta-split-module__kmulQG__cardVideoOverlay {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+}
+
+.cta-split-module__kmulQG__cardContent {
+  z-index: 2;
+  color: var(--color-text-inverse, #fff);
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cta-split-module__kmulQG__cardTitle {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cta-split-module__kmulQG__cardButtons {
+  margin-top: 1rem;
+}
+
+.cta-split-module__kmulQG__cardButton {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border: 1px solid #0000;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  font-size: .8125rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: inline-flex;
+}
+
+.cta-split-module__kmulQG__cardButtonPrimary {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+.cta-split-module__kmulQG__cardButtonPrimary:hover, .cta-split-module__kmulQG__cardButtonSecondary {
+  color: var(--color-text-inverse, #fff);
+  border-color: var(--color-text-inverse, #fff);
+  background-color: #0000;
+}
+
+.cta-split-module__kmulQG__cardButtonSecondary:hover {
+  background-color: var(--color-text-inverse, #fff);
+  color: var(--color-text, #222);
+}
+
+@media (max-width: 767px) {
+  .cta-split-module__kmulQG__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-split-module__kmulQG__card {
+    height: 50vh;
+  }
+
+  .cta-split-module__kmulQG__cardContent {
+    padding: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=nter_p4a_p448-poc_components_sections_cta-split_cta-split_module_css_bad6b30c._.single.css.map*/

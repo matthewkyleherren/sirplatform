@@ -1,0 +1,81 @@
+.trigger {
+	border: 1px solid rgba(23, 23, 23, 0.25);
+	background: none;
+	color: inherit;
+	padding: 0.6rem 1rem;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 0.75rem;
+	cursor: pointer;
+}
+
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.45);
+	z-index: 120;
+}
+
+.content {
+	background: var(--ProductPanel_BG, #f1f1ef);
+	color: var(--ProductPanel_Text, #171717);
+	padding: 2.5rem;
+	width: min(540px, 90vw);
+	max-height: 85vh;
+	border-radius: 24px;
+	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	z-index: 130;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+	.content {
+		padding: 1.5rem;
+		max-block-size: 90vh;
+		border-radius: 20px 20px 0 0;
+		inset-inline: 0;
+		inset-block-end: 0;
+		transform: none;
+	}
+}
+
+.title {
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.body {
+	flex: 1;
+	overflow-y: auto;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: inherit;
+}
+
+.body ul {
+	padding-left: 1.25rem;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(23, 23, 23, 0.15);
+	font-size: 0.8rem;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 0.25rem 0.75rem;
+	border-radius: 30px;
+}
