@@ -1,0 +1,95 @@
+.section {
+	padding: 5rem 2rem;
+}
+
+.inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+
+.textColumn {
+	max-width: 520px;
+}
+
+.kicker {
+	font-size: 0.6875rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-bottom: 1.5rem;
+	opacity: 0.5;
+}
+
+.title {
+	font-size: clamp(2rem, 3.5vw, 3rem);
+	line-height: 1.1;
+	font-weight: 400;
+	margin: 0 0 1.5rem;
+}
+
+.subtitle {
+	font-size: clamp(0.9375rem, 1.25vw, 1.0625rem);
+	line-height: 1.6;
+	font-weight: 400;
+	margin: 0 0 1.5rem;
+	opacity: 0.85;
+}
+
+.body {
+	font-size: 0.875rem;
+	line-height: 1.7;
+	opacity: 0.6;
+}
+
+.imageColumn {
+	position: relative;
+}
+
+.imageWrapper {
+	position: relative;
+	aspect-ratio: 3 / 4;
+	overflow: hidden;
+}
+
+.image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 900.02px) {
+	.section {
+		padding-left: calc(var(--Navigation_Column, 200px) + var(--Site_Margin, 20px));
+	}
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding: 3rem 1.25rem;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+	}
+
+	.textColumn {
+		max-width: none;
+		order: 2;
+	}
+
+	.imageColumn {
+		order: 1;
+	}
+
+	.imageWrapper {
+		aspect-ratio: 4 / 3;
+	}
+}

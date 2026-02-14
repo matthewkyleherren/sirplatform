@@ -1,33 +1,27 @@
-import { ourStorySections } from '@/lib/data/our-story'
-import { CTASingle } from '@/components/sections/cta-single/cta-single'
-import { CTASplit } from '@/components/sections/cta-split/cta-split'
-import { CTACarousel } from '@/components/sections/cta-carousel/cta-carousel'
-import { TextReveal } from '@/components/sections/text-reveal/text-reveal'
-import { EditorialContent } from '@/components/sections/editorial-content/editorial-content'
-import { PageHeaderMarquee } from '@/components/sections/page-header-marquee/page-header-marquee'
+import { OurStoryHero } from '@/components/our-story/our-story-hero'
+import { OurStoryMarquee } from '@/components/our-story/our-story-marquee'
+import { OurStoryEditorialGrid } from '@/components/our-story/our-story-editorial-grid'
+import { OurStoryTextBlock } from '@/components/our-story/our-story-text-block'
+import { OurStoryResponsibility } from '@/components/our-story/our-story-responsibility'
+import { OurStoryMaterialTicker } from '@/components/our-story/our-story-material-ticker'
+import { OurStoryPillars } from '@/components/our-story/our-story-pillars'
 import { FloatingNav } from '@/components/sections/floating-nav/floating-nav'
+
+export const metadata = {
+	title: 'Our Story — P448',
+	description: 'P448 blends timeless design, thoughtful details and modern influence to create more than just footwear.',
+}
 
 export default function OurStoryPage() {
 	return (
 		<>
-			{ourStorySections.map((section, index) => {
-				switch (section.type) {
-					case 'page-header-marquee':
-						return <PageHeaderMarquee key={index} data={section} />
-					case 'cta-single':
-						return <CTASingle key={index} data={section} />
-					case 'text-reveal':
-						return <TextReveal key={index} data={section} />
-					case 'cta-split':
-						return <CTASplit key={index} data={section} />
-					case 'editorial':
-						return <EditorialContent key={index} data={section} />
-					case 'cta-carousel':
-						return <CTACarousel key={index} data={section} />
-					default:
-						return null
-				}
-			})}
+			<OurStoryHero />
+			<OurStoryMarquee />
+			<OurStoryEditorialGrid />
+			<OurStoryTextBlock />
+			<OurStoryResponsibility />
+			<OurStoryMaterialTicker />
+			<OurStoryPillars />
 			<FloatingNav label="Shop Now" href="#" />
 		</>
 	)

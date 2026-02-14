@@ -1,0 +1,197 @@
+.section {
+	padding: 5rem 0 0;
+}
+
+.kicker {
+	font-size: 0.6875rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	padding: 0 2rem;
+	margin-bottom: 3rem;
+	opacity: 0.5;
+}
+
+/* 4-column pillars grid */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2px;
+	padding: 0 2rem;
+	margin-bottom: 4rem;
+}
+
+.pillar {
+	padding: 2rem 1.5rem;
+	border-top: 1px solid var(--Color_Border, rgba(34, 34, 34, 0.1));
+}
+
+.pillarTitle {
+	font-size: clamp(1.25rem, 2vw, 1.625rem);
+	line-height: 1.2;
+	font-weight: 400;
+	margin: 0 0 1rem;
+}
+
+.pillarBody {
+	font-size: 0.8125rem;
+	line-height: 1.65;
+	opacity: 0.7;
+}
+
+/* Project Sustainability CTA */
+.ctaBlock {
+	position: relative;
+	height: 70vh;
+	overflow: hidden;
+}
+
+.ctaMedia {
+	position: absolute;
+	inset: 0;
+}
+
+.ctaImage {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.ctaOverlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.55) 0%,
+		rgba(0, 0, 0, 0.1) 60%
+	);
+	z-index: 1;
+}
+
+.ctaContent {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	padding: 3rem 2rem;
+	max-width: 650px;
+	color: #fff;
+}
+
+.ctaKicker {
+	font-size: 0.6875rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.75rem;
+	opacity: 0.7;
+}
+
+.ctaTitle {
+	font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+	line-height: 1.15;
+	font-weight: 400;
+	margin: 0 0 1rem;
+}
+
+.ctaDescription {
+	font-size: 0.875rem;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+	opacity: 0.85;
+}
+
+.ctaButtons {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.ctaButtonPrimary {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.75rem;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	background: #fff;
+	color: #222;
+	border: 1px solid #fff;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.ctaButtonPrimary:hover {
+	background: transparent;
+	color: #fff;
+}
+
+.ctaButtonSecondary {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.75rem;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	background: transparent;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.ctaButtonSecondary:hover {
+	background: #fff;
+	color: #222;
+	border-color: #fff;
+}
+
+@media (min-width: 900.02px) {
+	.kicker {
+		padding-left: calc(var(--Navigation_Column, 200px) + var(--Site_Margin, 20px));
+	}
+
+	.grid {
+		padding: 0 2rem 0 calc(var(--Navigation_Column, 200px) + var(--Site_Margin, 20px));
+	}
+
+	.ctaContent {
+		padding-left: calc(var(--Navigation_Column, 200px) + var(--Site_Margin, 20px));
+	}
+}
+
+@media (max-width: 999px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding: 3rem 0 0;
+	}
+
+	.kicker {
+		padding: 0 1.25rem;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		padding: 0 1.25rem;
+		gap: 0;
+	}
+
+	.pillar {
+		padding: 1.5rem 0;
+	}
+
+	.ctaBlock {
+		height: 60vh;
+	}
+
+	.ctaContent {
+		padding: 2rem 1.25rem;
+	}
+}
