@@ -1,28 +1,27 @@
 .section {
-	padding: 2.5rem 0;
+	padding: 1.5rem 0;
 	overflow: hidden;
-	background: var(--Color_Background);
 }
 
 .track {
 	display: flex;
 	white-space: nowrap;
-	animation: marquee 25s linear infinite;
+	animation: marquee 20s linear infinite;
 }
 
-.text {
-	font-size: clamp(2rem, 5vw, 3.75rem);
+.item {
+	font-size: clamp(1.75rem, 4vw, 3rem);
 	line-height: 1.1;
 	font-weight: 400;
 	flex-shrink: 0;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	color: var(--Color_Dark);
 }
 
-.separator {
+.sep {
 	display: inline-block;
-	padding: 0 0.5em;
+	padding: 0 0.4em;
 	opacity: 0.4;
 }
 

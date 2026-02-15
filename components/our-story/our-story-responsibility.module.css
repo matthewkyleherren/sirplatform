@@ -2,23 +2,22 @@
 	padding: 0;
 }
 
-/* Heading */
-.header {
-	padding: 4rem 2rem 2rem;
-}
-
 .heading {
 	font-size: clamp(2rem, 3.5vw, 3rem);
 	line-height: 1.1;
 	font-weight: 400;
+	padding: 4rem calc(var(--Site_Margin, 15px) * 2) 2rem;
+	color: var(--Color_Dark);
 }
 
-/* Definition rows */
 .rows {
-	padding: 0 2rem;
+	padding: 0 calc(var(--Site_Margin, 15px) * 2);
 }
 
 .row {
+	display: flex;
+	gap: 2rem;
+	padding: 1.25rem 0;
 	border-top: 1px solid var(--Color_Border);
 }
 
@@ -26,32 +25,29 @@
 	border-bottom: 1px solid var(--Color_Border);
 }
 
-.rowInner {
-	display: flex;
-	padding: 1.5rem 0;
-	gap: 2rem;
-}
-
 .rowTitle {
-	flex: 0 0 200px;
-	font-size: 0.875rem;
-	line-height: 1.5;
+	flex: 0 0 180px;
+	font-size: 0.8125rem;
 	font-weight: 500;
+	line-height: 1.5;
+	color: var(--Color_Dark);
 }
 
 .rowBody {
 	flex: 1;
-	font-size: 0.8125rem;
+	font-size: 0.75rem;
 	line-height: 1.65;
-	opacity: 0.65;
+	color: var(--Color_Dark);
+	opacity: 0.6;
 }
 
 /* Project Sustainability CTA */
-.ctaBlock {
+.cta {
 	position: relative;
-	height: 70vh;
+	height: 65vh;
+	min-height: 400px;
 	overflow: hidden;
-	margin-top: 4rem;
+	margin-top: 3.5rem;
 }
 
 .ctaMedia {
@@ -68,11 +64,7 @@
 .ctaOverlay {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(
-		to top,
-		rgba(0, 0, 0, 0.5) 0%,
-		rgba(0, 0, 0, 0.05) 60%
-	);
+	background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.05) 50%);
 	z-index: 1;
 }
 
@@ -81,82 +73,60 @@
 	bottom: 0;
 	left: 0;
 	z-index: 2;
-	padding: 3rem 2rem;
-	max-width: 500px;
+	padding: 3rem calc(var(--Site_Margin, 15px) * 2);
 	color: #fff;
 }
 
 .ctaTitle {
 	font-size: clamp(2rem, 4vw, 3.25rem);
-	line-height: 1.1;
+	line-height: 1.05;
 	font-weight: 400;
-	margin: 0 0 1.5rem;
+	margin: 0 0 1.25rem;
 }
 
 .ctaButtons {
 	display: flex;
-	gap: 0.75rem;
-	flex-wrap: wrap;
+	gap: 0.625rem;
 }
 
-.ctaButtonPrimary {
+.btnPrimary,
+.btnSecondary {
 	display: inline-flex;
 	align-items: center;
-	padding: 0.65rem 1.25rem;
+	padding: 0.6rem 1.1rem;
 	font-size: 0.6875rem;
 	line-height: 1;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 0.08em;
+	letter-spacing: 0.06em;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btnPrimary {
 	background: #fff;
 	color: #222;
 	border: 1px solid #fff;
-	transition: background-color 0.3s, color 0.3s;
 }
 
-.ctaButtonPrimary:hover {
+.btnPrimary:hover {
 	background: transparent;
 	color: #fff;
 }
 
-.ctaButtonSecondary {
-	display: inline-flex;
-	align-items: center;
-	padding: 0.65rem 1.25rem;
-	font-size: 0.6875rem;
-	line-height: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
+.btnSecondary {
 	background: transparent;
 	color: #fff;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	transition: background-color 0.3s, color 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
 }
 
-.ctaButtonSecondary:hover {
+.btnSecondary:hover {
 	background: #fff;
 	color: #222;
 	border-color: #fff;
 }
 
-@media (min-width: 900.02px) {
-	.header {
-		padding-left: calc(var(--Site_Margin, 20px) * 2);
-	}
-
-	.rows {
-		padding-left: calc(var(--Site_Margin, 20px) * 2);
-		padding-right: calc(var(--Site_Margin, 20px) * 2);
-	}
-
-	.ctaContent {
-		padding-left: calc(var(--Site_Margin, 20px) * 2);
-	}
-}
-
 @media (max-width: 767px) {
-	.header {
+	.heading {
 		padding: 3rem 1.25rem 1.5rem;
 	}
 
@@ -164,18 +134,19 @@
 		padding: 0 1.25rem;
 	}
 
-	.rowInner {
+	.row {
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 0.35rem;
 	}
 
 	.rowTitle {
 		flex: none;
 	}
 
-	.ctaBlock {
-		height: 55vh;
-		margin-top: 3rem;
+	.cta {
+		height: 50vh;
+		min-height: 320px;
+		margin-top: 2.5rem;
 	}
 
 	.ctaContent {

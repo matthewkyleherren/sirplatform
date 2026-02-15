@@ -4,12 +4,12 @@ const MARQUEE_TEXT = 'You Can Surf Later'
 
 export function OurStoryMarquee() {
 	return (
-		<section className={s.section}>
-			<div className={s.track} aria-label={MARQUEE_TEXT}>
+		<section className={s.section} aria-label={MARQUEE_TEXT}>
+			<div className={s.track}>
 				{Array.from({ length: 8 }).map((_, i) => (
-					<span key={i} className={s.text} aria-hidden={i > 0 ? 'true' : undefined}>
+					<span key={i} className={s.item} aria-hidden={i > 0 ? 'true' : undefined}>
 						{MARQUEE_TEXT}
-						<span className={s.separator} aria-hidden="true">{' \u2014 '}</span>
+						<span className={s.sep}>{' \u2014 '}</span>
 					</span>
 				))}
 			</div>

@@ -1,4 +1,5 @@
 import { OurStoryHero } from '@/components/our-story/our-story-hero'
+import { OurStoryBodyText } from '@/components/our-story/our-story-body-text'
 import { OurStoryMarquee } from '@/components/our-story/our-story-marquee'
 import { OurStoryEditorialGrid } from '@/components/our-story/our-story-editorial-grid'
 import { OurStoryResponsibility } from '@/components/our-story/our-story-responsibility'
@@ -15,6 +16,7 @@ export default function OurStoryPage() {
 	return (
 		<>
 			<OurStoryHero />
+			<OurStoryBodyText />
 			<OurStoryMarquee />
 			<OurStoryEditorialGrid />
 			<OurStoryResponsibility />
